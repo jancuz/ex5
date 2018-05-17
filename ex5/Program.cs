@@ -45,12 +45,16 @@ namespace ex5
             }
 
             int min = int.MaxValue;
+
+            int pos1 = count / 2;
+            int pos2 = pos1;
+            int pos3;
             if (count / 2 != 0)
-            {
-                int pos1 = count / 2;
-                int pos2 = pos1;
-                int pos3 = pos1;
-                for (int i = pos1; i < count; i++)
+                pos3 = pos1;
+            else
+                pos3 = pos1 + 1;
+
+            for (int i = pos1; i < count; i++)
                 {
                     for (int j = pos2; j <= pos3; j++)
                     {
@@ -60,7 +64,6 @@ namespace ex5
                     pos2--;
                     pos3++;
                 }
-            }
 
             Console.WriteLine(min);
         }
