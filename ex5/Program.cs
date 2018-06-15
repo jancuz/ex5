@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ex5
 {
@@ -68,6 +64,8 @@ namespace ex5
                 }
 
             Console.WriteLine("Минимальный элемент в нижнем треугольнике матрицы: {0}", min);
+
+            Console.WriteLine("Нажмите Enter для завершения работы программы...");
             Console.ReadLine();
         }
     }
